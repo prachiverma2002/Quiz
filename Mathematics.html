@@ -1,0 +1,90 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+        .quiz-box{
+            background-color:white;
+            width:70%;
+            height:80%;
+            position: absolute;
+            top:10%;
+            left:15%
+        }
+        h2{
+            font-size:80px;
+        }
+        hr{
+            border:2px solid black;
+        }
+        h3{
+            font-size:40px;
+        }
+       
+        button{
+            font-size: 40px; font-weight: 670; color: white; padding: 15px 30px; outline: none; border: none; border-radius: 10px; background: #40b6ff; cursor: pointer;
+        } 
+        button:active{
+            box-shadow:0 5px #666;
+            transform: translateY(4px);
+        }
+#timer,h4{
+  color:red;
+  font-size:40px;
+  font-weight:bold;
+  display:inline;
+  }
+  input[type=radio] {
+    border: 5px;
+    width: 5%;
+    height: 2em;
+    margin:5%;
+    background-color:black;
+    
+}
+  
+  
+  label{
+      font-size:40px;
+      width:90%;
+      position: absolute;
+      right:-1%;
+      background-color:#40b6ff;
+      height:7%;
+      text-align:center;
+      border-radius:10px;
+  }
+  label:active{
+      box-shadow:0 3px #666;
+      transform: translateY(2px);
+  }
+  p{
+      font-size:60px;
+      font-weight:bold;
+      position: absolute; 
+      bottom:45%;
+  }
+  
+    </style>
+</head>
+
+<body bgcolor="#40b6ff">
+    <div class="quiz-box custom-box">
+        <b><h2>&nbsp Quiz</h2></b>
+       <h4 class="text-primary">&nbsp&nbsp Time Left:</h4>
+            <h4><span id="timer" class="text-primary">120</span> seconds</h4>
+       
+       <hr>
+        <h2 id="test_status"></h2>
+<div id="test"></div>
+      
+        <p> <span id="correct"></span></p>
+<p id="correct"></p>
+
+
+    </div>
+   <script src="maths.js"></script>
+    <script src="timer.js"></script>
+</body>
+</html>

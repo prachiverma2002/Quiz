@@ -1,0 +1,90 @@
+<html>  
+<head>  
+<title> Verification</title>  
+<style>
+   
+    body{
+        background-color:#40b6ff;
+    }
+    p{
+        text-align:right;
+        color:blue;
+        font-size:20px;
+    }
+    .box {
+    background-color:white;
+    width:60%;
+    height:20%;
+    margin:20%;
+    display:grid;
+    border-radius:30px;
+    border: 5px solid #73AD21;
+}
+button:active{
+    box-shadow:0 5px #8098ff;
+    transform: translateY(4px);
+}
+p:hover{
+    color:orange;
+}
+a{
+    text-decoration:none;
+}
+td{
+    font-size:50px;
+}
+h1{
+    font-size:40px;
+}
+</style>
+</head>  
+<script>  
+function verifyPassword() {  
+  var pw = document.getElementById("pswd").value;  
+   
+  if(pw == "") {  
+     document.getElementById("message").innerHTML = "**Fill the password!";  
+     return false;  
+  }       
+  if(pw.length < 8) {  
+     document.getElementById("message").innerHTML = "** length must be atleast 8 characters";  
+     return false;  
+  }     
+  if(pw.length > 15) {  
+     document.getElementById("message").innerHTML = "** length must not exceed 15 characters";  
+     return false;  
+  } else {  
+      window.location.href="Subject.html";
+  }  
+}  
+
+function show() {
+  var x = document.getElementById("pswd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>    
+
+<body>  
+<div class="box">
+<center>  
+<h1 style="color:Orange">Register</h1>  
+
+<form onsubmit ="return verifyPassword()">  
+<td> Enter Username</td>
+<input type = "username" id = "usr" value = ""><br><br> 
+<td> Enter Password </td>  
+<input type = "password" id = "pswd" value = "">   <br>
+<input type="checkbox" onclick="show()">Show Password
+<span id = "message" style="color:orange"> </span> <br><br>     <center>
+<button type= "login" value = "Login" style="background:linear-gradient(-225deg, powderblue,#40a1ff,#2b6dff,violet); text-align:center;color:white; font-weight:bold; width:40%; height:10%; font-size:25px;">Login</center>
+<a href="password.html" target="password.html"><p> Forget Password?&nbsp</p></a>
+<a href="account.html" target="account.html"><p>Create Account&nbsp &nbsp</p></a>
+</div>
+</form>  
+</center>  
+</body>  
+</html>  

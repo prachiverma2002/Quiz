@@ -1,0 +1,56 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+         background-color:#40b6ff;
+        }
+        .container {
+    background-color:white;
+    width:72%;
+    height:60%;
+    
+    display:grid;
+    border-radius:30px;
+    border: 5px solid #73AD21;
+    position: absolute;
+    left:15%;
+    top:20%;
+}
+input{
+    margin:20px;
+    width:70%;
+    padding:20px;
+}
+button{
+    background-color:#2b58ff;
+    color:white;
+    font-size:40px;
+}
+button:active{
+    box-shadow:0 5px #5597ff;
+    transform: translateY(4px);
+}
+label{
+    font-size:32px;
+}
+    </style>
+</head>
+<body>
+    <div class="container"><br><br>
+        <label for="fname">First Name* : </label><br>
+  <input type="text" id="fname" name="fname" maxlength="12" required><br>
+  <label for="mname">Middle Name : </label><br>
+  <input type="text" id="mname" name="mname" maxlength="12" ><br>
+  <label for="lname">Last Name* : </label><br>
+  <input type="text" id="lname" name="lname" maxlength="12" required><br>
+  
+  <label for="cp">Create Password* : </label><br>
+  <input type="password" id="cp" name="rp" minlength="8" required><br>
+  <label for="rp">Retype Password* : </label><br>
+  <input type="password" id="rp" name="rp" minlength="8" required><br><br>
+<center><button type="create" value="create" onclick="window.location.href ='home.html'" style="width:60%; height:250%; ">Create</button></center>
+    </div>
+</body>
+</html>
