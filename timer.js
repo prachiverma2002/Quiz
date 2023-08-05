@@ -7,7 +7,8 @@ function countDownTimer(){
     time--;
     if(time<0){
         clearInterval(counter);
-        window.location.href="score.html";
+alert("Sorry! Your time is Over);
+        window.location.href="Subject.html";
     }
 }
 function startTimer(){
